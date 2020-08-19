@@ -34,7 +34,7 @@ export default Vue.extend({
     Logo,
   },
   computed: {
-    title(): string {
+    title (): string {
       return 'sample'
     },
   },

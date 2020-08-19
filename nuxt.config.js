@@ -3,7 +3,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: 'universal',
+  mode:   'universal',
   /*
    **
    ** Application Directory Settings
@@ -18,14 +18,14 @@ export default {
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
-  head: {
+  head:   {
     title: process.env.npm_package_name || '',
-    meta: [
+    meta:  [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'description',
-        name: 'description',
+        hid:     'description',
+        name:    'description',
         content: process.env.npm_package_description || '',
       },
     ],
@@ -34,17 +34,17 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css:          [],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins:      [],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
    */
-  components: true,
+  components:   true,
   /*
    ** Nuxt.js dev-modules
    */
@@ -54,6 +54,10 @@ export default {
     '@nuxtjs/stylelint-module',
     // Doc: https://vuetifyjs.com/ja/getting-started/quick-start/#nuxt-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB
     '@nuxtjs/vuetify',
+    '@nuxt/typescript-build', {
+      typeCheck:              true,
+      ignoreNotFoundWarnings: true,
+    },
   ],
   /*
    ** Nuxt.js modules
