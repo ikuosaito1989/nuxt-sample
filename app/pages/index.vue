@@ -27,8 +27,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import Logo from '@/components/logo.vue'
 
 export default Vue.extend({
+  components: {
+    Logo,
+  },
   computed: {
     title(): string {
       return 'sample'
