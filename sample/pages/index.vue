@@ -2,9 +2,7 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">
-        sample
-      </h1>
+      <h1 class="title" v-text="title" />
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -30,10 +28,16 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  computed: {
+    title(): string {
+      return 'sample'
+    },
+  },
+})
 </script>
 
-<style>
+<style lang="scss" scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;
