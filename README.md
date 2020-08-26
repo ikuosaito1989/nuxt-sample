@@ -24,8 +24,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ```bash
 # serve with hot reload at localhost:3000
-docker-compose up
+./docker/dev
 
-# test
-docker-compose run --rm app npm test
+# npm command
+./docker/npm
 ```
