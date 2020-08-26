@@ -46,6 +46,11 @@ export default {
    */
   components:   true,
   /*
+   ** telemetry Property
+   ** See https://ja.nuxtjs.org/api/configuration-telemetry
+   */
+  telemetry:    false,
+  /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
@@ -54,10 +59,6 @@ export default {
     '@nuxtjs/stylelint-module',
     // Doc: https://vuetifyjs.com/ja/getting-started/quick-start/#nuxt-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB
     '@nuxtjs/vuetify',
-    '@nuxt/typescript-build', {
-      typeCheck:              true,
-      ignoreNotFoundWarnings: true,
-    },
   ],
   /*
    ** Nuxt.js modules
