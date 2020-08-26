@@ -1,31 +1,15 @@
-# sample
 
-## Build Setup
+## コマンド一覧
 
+## コマンド一覧
+
+このプロジェクトはDockerのみ使用する。npm、nodeなどの開発環境は全てDockerから使用する。
+
+### example
 ```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-### Docker
-
-
-```bash
-# serve with hot reload at localhost:3000
+# 起動
 ./docker/dev
 
-# npm command
+# npmコマンド
 ./docker/npm
 ```
