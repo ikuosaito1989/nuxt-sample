@@ -1,0 +1,3 @@
+#!/bin/sh
+# アプリケーションコンテナで `yarn` コマンドを実行するコマンド
+docker-compose run --rm app yarn $@

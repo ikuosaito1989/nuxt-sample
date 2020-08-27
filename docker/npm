@@ -1,3 +1,0 @@
-#!/bin/sh
-# アプリケーションコンテナで `npm` コマンドを実行するコマンド
-docker-compose run --rm app npm $@
